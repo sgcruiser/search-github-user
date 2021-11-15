@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_KEY = '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';
+const API_KEY = process.env.API_SECRET_KEY;
 const BASE_URL = 'https://api.github.com/';
 
 axios.defaults.baseURL = BASE_URL;
