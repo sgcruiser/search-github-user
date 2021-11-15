@@ -1,13 +1,13 @@
 import axios from 'axios';
 
-const API_KEY = process.env.API_SECRET_KEY;
+// const API_KEY = process.env.API_SECRET_KEY;
 const BASE_URL = 'https://api.github.com/';
 
 axios.defaults.baseURL = BASE_URL;
 
-axios.defaults.params = {
-  api_key: API_KEY,
-};
+// axios.defaults.params = {
+//   api_key: API_KEY,
+// };
 
 const fetchSearchUsers = async ({ searchQuery }) => {
   return await axios
