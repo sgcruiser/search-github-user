@@ -1,0 +1,57 @@
+.userCard {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 10px;
+
+  &__img {
+    display: block;
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+  }
+
+  &__contain {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 15px;
+  }
+
+  &__login {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.25;
+  }
+
+  &__email {
+  }
+
+  &__location {
+  }
+
+  &__createdAt {
+  }
+
+  &__followers {
+  }
+
+  &__following {
+  }
+
+  // &__bio {
+  //   margin-bottom: 20px;
+
+  //   font-size: 20px;
+  //   font-weight: 500;
+  //   font-style: italic;
+  // }
+}
+
+.userCard__bio {
+  margin-bottom: 10px;
+
+  font-size: 24px;
+  font-weight: 400;
+  font-style: italic;
+
+  text-align: center;
+}

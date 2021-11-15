@@ -1,0 +1,24 @@
+.repositories {
+  display: flex;
+  justify-content: space-between;
+
+  &__name {
+    // display: block;
+    padding: 10px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+
+    // padding: 5px;
+  }
+
+  &__item {
+    // padding: 5px;
+
+    &:not(:last-child) {
+      padding-bottom: 5px;
+    }
+  }
+}

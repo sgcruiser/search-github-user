@@ -1,0 +1,39 @@
+.usersItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  &__tumb {
+    // height: 240px;
+
+    @media screen and (min-width: 370px) and (max-width: 767px) {
+      // height: 300px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1169px) {
+      // height: 360px;
+    }
+
+    @media screen and (min-width: 1170px) {
+      // height: 420px;
+    }
+  }
+
+  &__img {
+    width: 50px;
+    // height: 100%;
+    // border-radius: 3px 3px 0 0;
+
+    object-fit: contain;
+    object-position: top;
+  }
+
+  &__login {
+    // display: flex;
+    // justify-content: center;
+    padding: 10px;
+
+    font-size: 20px;
+    font-weight: 400;
+  }
+}

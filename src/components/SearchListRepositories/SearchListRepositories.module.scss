@@ -1,0 +1,9 @@
+.repos {
+  &__list {
+    padding: 10px;
+  }
+
+  &__item:not(:last-child) {
+    padding-bottom: 10px;
+  }
+}
