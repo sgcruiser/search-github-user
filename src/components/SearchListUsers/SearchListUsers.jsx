@@ -10,16 +10,16 @@ import styles from './SearchListUsers.module.scss';
 const SearchListUsers = ({ usersList }) => {
   return (
     <Fragment>
-      <ul className={styles.list}>
+      <ul className={styles.user__list}>
         {usersList &&
           usersList.map(({ id, login, avatar_url, repos_url }) => (
-            <li key={id} className={styles.item}>
+            <li key={id} className={styles.user__item}>
               <Link
                 to={{
                   pathname: `${routes.userDetails}/${login}`,
                   state: { login: `${login}` },
                 }}
-                className={styles.link}
+                className={styles.user__link}
               >
                 <UserGitHubItem
                   id={id}

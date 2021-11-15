@@ -1,36 +1,41 @@
+@import '../../styles/shared.scss';
+
 .usersItem {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
 
-  &__tumb {
-    // height: 240px;
-
-    @media screen and (min-width: 370px) and (max-width: 767px) {
-      // height: 300px;
-    }
-
-    @media screen and (min-width: 768px) and (max-width: 1169px) {
-      // height: 360px;
-    }
-
-    @media screen and (min-width: 1170px) {
-      // height: 420px;
-    }
+  &:hover {
+    background-color: $green_hover_background;
   }
 
+  // &__tumb {
+  // }
+
   &__img {
-    width: 50px;
-    // height: 100%;
-    // border-radius: 3px 3px 0 0;
+    display: none;
+
+    @media screen and (min-width: 370px) and (max-width: 767px) {
+      display: block;
+      width: 60px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+      display: block;
+      width: 80px;
+    }
+
+    @media screen and (min-width: 1024px) {
+      display: block;
+      width: 120px;
+    }
 
     object-fit: contain;
     object-position: top;
   }
 
-  &__login {
-    // display: flex;
-    // justify-content: center;
+  &__login,
+  &__repos {
     padding: 10px;
 
     font-size: 20px;

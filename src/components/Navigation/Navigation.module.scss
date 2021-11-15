@@ -1,3 +1,5 @@
+@import '../../styles/shared.scss';
+
 .navi {
   display: flex;
   align-items: center;
@@ -7,9 +9,8 @@
   max-width: 1170px;
 }
 
-.logo {
-  // margin-right: 30px;
-}
+// .logo {
+// }
 
 .button {
   margin-right: 20px;
@@ -34,6 +35,7 @@
 
 .searchTitle {
   margin: 0 auto;
-  // padding-left: 95px;
-  // padding-bottom: 20px;
+  font-family: $title-font-stack;
+  font-weight: 200;
+  font-size: 40px;
 }

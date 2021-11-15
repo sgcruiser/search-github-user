@@ -17,7 +17,7 @@ const UserGitHubItem = ({ id, login, avatar_url, repos_url }) => {
       <p className={styles.usersItem__login}>
         <span>{login}</span>
       </p>
-      <p className={styles.usersItem__login}>
+      <p className={styles.usersItem__repos}>
         Repo:<span> {quantityRepos}</span>
       </p>
     </div>

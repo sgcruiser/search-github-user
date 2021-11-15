@@ -1,22 +1,30 @@
+@import '../../styles/shared.scss';
+
 .repositories {
   display: flex;
   justify-content: space-between;
 
+  padding: 0 10px;
+
+  color: $black;
+
+  &:hover {
+    color: $red;
+    background-color: $red_hover;
+
+    font-weight: 500;
+  }
+
   &__name {
-    // display: block;
-    padding: 10px;
+    padding: 14px 0;
   }
 
   &__list {
     display: flex;
     flex-direction: column;
-
-    // padding: 5px;
   }
 
   &__item {
-    // padding: 5px;
-
     &:not(:last-child) {
       padding-bottom: 5px;
     }

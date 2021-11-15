@@ -1,6 +1,5 @@
 const routes = {
   search: '/',
-  // searchRepositories: '/search/repositories',
   userDetails: '/users',
 };
 

@@ -7,8 +7,6 @@ import Container from './components/Container';
 import AppBar from './components/AppBar/AppBar';
 import Loader from './components/Loader';
 
-import './App.scss';
-
 const SearchUsersPage = lazy(() =>
   import('./views/SearchUsersPage' /* webpackChunkName: "search_users_page" */),
 );
