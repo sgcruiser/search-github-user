@@ -5,22 +5,26 @@
     {
       "src": "favicon.png",
       "type": "image/png",
-      "sizes": "24x24"
+      "sizes": "24x24",
+      "purpose": "any maskable"
     },
     {
       "src": "icon.png",
       "type": "image/png",
-      "sizes": "64x64 32x32 24x24 16x16"
+      "sizes": "64x64 32x32 24x24 16x16",
+      "purpose": "any maskable"
     },
     {
       "src": "../src/images/githubTitle.svg",
       "type": "image/svg",
-      "sizes": "256x256 128x128 64x64 32x32 24x24"
+      "sizes": "256x256 128x128 64x64 32x32 24x24",
+      "purpose": "any maskable"
     },
     {
       "src": "../src/images/iconSearch.svg",
       "type": "image/svg",
-      "sizes": "64x64 32x32 24x24"
+      "sizes": "64x64 32x32 24x24",
+      "purpose": "any maskable"
     }
   ],
   "start_url": ".",
