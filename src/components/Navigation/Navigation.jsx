@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import routes from '../../routes';
-import Logo from './github-tile.svg';
+import Logo from '../../images/githubTitle.svg';
 
 import styles from './Navigation.module.scss';
 
