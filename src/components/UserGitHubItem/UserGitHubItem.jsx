@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import defaultImage from '../UserGitHub/avatar_default_2.png';
+import defaultImage from '../../images/avatar_default.png';
 import styles from './UserGitHubItem.module.scss';
 
 const UserGitHubItem = ({ id, login, avatar_url, repos_url }) => {

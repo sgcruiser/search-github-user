@@ -104,6 +104,7 @@ class UsersDetailsPage extends Component {
         <SearchForm
           onSubmit={this.onChangeQuery}
           textPlaceholder="Search for User's Repositories"
+          contentButton={user}
         />
         {error && (
           <error>

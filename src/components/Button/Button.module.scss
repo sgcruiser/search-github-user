@@ -1,28 +1,26 @@
 @import '../../styles/shared.scss';
 
-.Button {
-  padding: 6px 14px;
-  margin-bottom: 10px;
-  border-radius: 20px;
-  background-color: rgb(1, 180, 228);
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  text-align: center;
-  display: inline-block;
-  color: whitesmoke;
+.button {
+  width: 44px;
+  background-color: $blue;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
   border: 0;
-  text-decoration: none;
-  cursor: pointer;
-  font-family: inherit;
-  font-size: 18px;
-  line-height: 24px;
-  font-style: normal;
-  font-weight: 500;
-  min-width: 140px;
-  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
-    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+
+  &__Default {
+    @extend .button;
+    background-image: url(../../images/icon.png);
+  }
+
+  &__User {
+    @extend .button;
+    background-image: url(../../images/search.png);
+  }
 
   &:hover,
   :focus {
-    background-color: rgb(144, 206, 161);
+    background-color: $green_hover_background;
+    transition: $timing-function;
   }
 }

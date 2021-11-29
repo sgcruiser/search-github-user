@@ -17,10 +17,10 @@ const Navigation = props => {
           alt="Logo"
           width="50"
           height="50"
-          className={styles.logo}
+          className={styles.navi__logo}
         />
       </NavLink>
-      <h1 className={styles.searchTitle}>GitHub Searcher</h1>
+      <h1 className={styles.navi__searchTitle}>GitHub Searcher</h1>
     </div>
   );
 };

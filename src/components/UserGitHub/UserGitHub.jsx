@@ -2,7 +2,7 @@ import { Fragment } from 'react';
 import { withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-import defaultImage from './avatar_default_2.png';
+import defaultImage from '../../images/avatar_default_2.png';
 
 import styles from './UserGitHub.module.scss';
 
