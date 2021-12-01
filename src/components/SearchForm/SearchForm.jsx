@@ -1,6 +1,8 @@
 import { Component, Fragment } from 'react';
 import PropTypes from 'prop-types';
 
+import Button from '../Button';
+
 import styles from './SearchForm.module.scss';
 
 class SearchForm extends Component {
@@ -30,7 +32,7 @@ class SearchForm extends Component {
   };
 
   render() {
-    const { textPlaceholder } = this.props;
+    const { textPlaceholder, onSubmit, contentButton } = this.props;
     return (
       <Fragment>
         <form className={styles.SearchForm} onSubmit={this.handleSubmit}>
@@ -46,9 +48,7 @@ class SearchForm extends Component {
             onChange={this.handleChange}
           />
 
-          <button type="submit" className={styles.SearchForm__button}>
-            <span className={styles.SearchForm__buttonLabel}>Search</span>
-          </button>
+          <Button onClickButton={onSubmit} contentButton={contentButton} />
         </form>
       </Fragment>
     );

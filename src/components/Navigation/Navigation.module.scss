@@ -5,37 +5,24 @@
   align-items: center;
 
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 10px 20px;
   max-width: 1170px;
-}
 
-// .logo {
-// }
+  &__logo {
+    fill: $green;
 
-.button {
-  margin-right: 20px;
-  padding-bottom: 19px;
-  padding-top: 19px;
-
-  color: whitesmoke;
-
-  font-size: 20px;
-  font-weight: 500;
-
-  &:hover,
-  :focus {
-    color: rgb(144, 206, 161);
-    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    :focus {
+      background-color: $green_hover_background;
+      fill: $green_hover;
+      transition: $timing-function;
+    }
   }
-}
 
-.buttonActive {
-  color: rgb(1, 180, 228);
-}
-
-.searchTitle {
-  margin: 0 auto;
-  font-family: $title-font-stack;
-  font-weight: 200;
-  font-size: 40px;
+  &__searchTitle {
+    margin: 0 auto;
+    font-family: $title-font-stack;
+    font-weight: 400;
+    font-size: 40px;
+  }
 }

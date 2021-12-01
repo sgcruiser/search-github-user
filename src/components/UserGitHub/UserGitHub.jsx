@@ -2,7 +2,7 @@ import { Fragment } from 'react';
 import { withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-import defaultImage from './avatar_default_2.png';
+import defaultImage from '../../images/avatar_default_2.png';
 
 import styles from './UserGitHub.module.scss';
 
@@ -35,11 +35,29 @@ const UserGitHub = data => {
         <div className={styles.userCard__contain}>
           <h3 className={styles.userCard__login}>{login}</h3>
 
-          <p className={styles.userCard__email}>Email : {email}</p>
-          <p className={styles.userCard__location}>Location : {location}</p>
-          <p className={styles.userCard__createdAt}>Join Date : {createdAt}</p>
-          <p className={styles.userCard__followers}>{followers} Followers</p>
-          <p className={styles.userCard__following}>Following {following}</p>
+          <ul className={styles.userCard__list}>
+            <li className={styles.userCard__item}>
+              <p className={styles.userCard__email}>Email : {email}</p>
+            </li>
+            <li className={styles.userCard__item}>
+              <p className={styles.userCard__location}>Location : {location}</p>
+            </li>
+            <li className={styles.userCard__item}>
+              <p className={styles.userCard__createdAt}>
+                Join Date : {createdAt}
+              </p>
+            </li>
+            <li className={styles.userCard__item}>
+              <p className={styles.userCard__followers}>
+                {followers} Followers
+              </p>
+            </li>
+            <li className={styles.userCard__item}>
+              <p className={styles.userCard__following}>
+                Following {following}
+              </p>
+            </li>
+          </ul>
         </div>
       </div>
       <div>
