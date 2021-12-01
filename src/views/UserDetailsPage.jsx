@@ -25,7 +25,6 @@ class UsersDetailsPage extends Component {
     const { login } = this.props.location.state;
     this.getUserDetails(login);
     this.getRepositories(login);
-    console.log(this);
   }
 
   componentDidUpdate(prevProps, prevState) {

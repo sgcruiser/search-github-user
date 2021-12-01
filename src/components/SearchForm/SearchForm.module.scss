@@ -16,17 +16,17 @@
   }
 
   &__input {
-    display: inline-block;
+    display: block;
     width: 100%;
-    font: inherit;
+    font-family: $primary-font-stack;
     font-size: 22px;
     line-height: 1.5;
-    border: 2px solid $white;
+    border: 1px solid $white;
     outline: none;
     padding-left: 16px;
 
     &::placeholder {
-      font: inherit;
+      font-family: $primary-font-stack;
       font-size: 20px;
     }
   }
