@@ -13,6 +13,7 @@ const Button = ({ onClickButton, contentButton }) => {
     <button
       className={stylesVariant}
       type="button"
+      aria-label="Search_button"
       onClick={onClickButton}
     ></button>
   );
