@@ -1,4 +1,4 @@
-import { Fragment, Suspense, lazy } from 'react';
+import { Suspense, lazy } from 'react';
 import { Route, Switch } from 'react-router-dom';
 
 import routes from './routes';
@@ -21,18 +21,16 @@ const NotFoundViews = lazy(() =>
 
 function App() {
   return (
-    <Fragment>
+    <Container>
       <AppBar />
-      <Container>
-        <Suspense fallback={<Loader />}>
-          <Switch>
-            <Route exact path={routes.search} component={SearchUsersPage} />
-            <Route path={routes.userDetails} component={UserDetailsPage} />
-            <Route component={NotFoundViews} />
-          </Switch>
-        </Suspense>
-      </Container>
-    </Fragment>
+      <Suspense fallback={<Loader />}>
+        <Switch>
+          <Route exact path={routes.search} component={SearchUsersPage} />
+          <Route path={routes.userDetails} component={UserDetailsPage} />
+          <Route component={NotFoundViews} />
+        </Switch>
+      </Suspense>
+    </Container>
   );
 }
 
