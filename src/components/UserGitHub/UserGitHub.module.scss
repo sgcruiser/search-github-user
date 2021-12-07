@@ -19,10 +19,23 @@
   }
 
   &__login {
-    font-size: 36px;
+    font-size: 34px;
     font-weight: 400;
     line-height: 1.25;
     text-align: center;
+    letter-spacing: 0.12rem;
+  }
+
+  &__list {
+    margin-top: 15px;
+  }
+
+  &__item {
+    font-weight: 500;
+
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
   }
 
   // &__email {
