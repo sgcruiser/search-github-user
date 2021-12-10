@@ -26,11 +26,12 @@
   &__list {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
   &__item {
     &:not(:last-child) {
-      padding-bottom: 5px;
+      // margin-bottom: 16px;
     }
   }
 }
