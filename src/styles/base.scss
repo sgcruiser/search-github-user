@@ -1,8 +1,11 @@
 @import './shared.scss';
 
 body {
+  min-height: 100vh;
   margin: 0;
-  background-color: $body_background;
+  // background-color: $body_background;
+  background: linear-gradient(to bottom, $gradient_first, $gradient_second)
+    no-repeat;
   color: $black;
   line-height: 1.5;
   font-family: $primary-font-stack;
