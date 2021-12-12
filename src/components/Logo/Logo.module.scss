@@ -1,0 +1,11 @@
+@import '../../styles/shared.scss';
+
+.logo {
+  fill: $black;
+
+  &:hover,
+  :focus {
+    fill: $green_hover;
+    transition: $timing-function;
+  }
+}

@@ -19,6 +19,7 @@ class UsersDetailsPage extends Component {
     repositories: [],
     isLoading: false,
     error: null,
+    searchQuery: null,
   };
 
   componentDidMount() {
@@ -123,6 +124,7 @@ UsersDetailsPage.propTypes = {
   history: PropTypes.object.isRequired,
   user: PropTypes.object,
   repositories: PropTypes.array,
+  searchQuery: PropTypes.string,
 };
 
 export default withRouter(UsersDetailsPage);

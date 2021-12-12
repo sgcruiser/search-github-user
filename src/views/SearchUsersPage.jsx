@@ -7,8 +7,6 @@ import SearchForm from '../components/SearchForm';
 import SearchListUsers from '../components/SearchListUsers';
 import Loader from '../components/Loader';
 
-// import contentButton from '../images/search.png';
-
 class SearchUsersPage extends Component {
   state = {
     users: [],

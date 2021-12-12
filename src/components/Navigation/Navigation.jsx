@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import routes from '../../routes';
-import Logo from '../../images/githubTitle.svg';
+import Logo from '../Logo';
+import LogoDefault from '../../images/githubTitle.svg';
 
 import styles from './Navigation.module.scss';
 
@@ -12,13 +13,9 @@ const Navigation = props => {
         activeClassName={styles.buttonActive}
         to={routes.search}
       >
-        <img
-          src={Logo}
-          alt="Logo"
-          width="50"
-          height="50"
-          className={styles.navi__logo}
-        />
+        {(Logo && <Logo route={routes} />) || (
+          <img src={LogoDefault} alt="Logo" className={styles.navi__logo} />
+        )}
       </NavLink>
       <h1 className={styles.navi__searchTitle}>GitHub Searcher</h1>
     </div>
