@@ -27,7 +27,14 @@
 
     &::placeholder {
       font-family: $primary-font-stack;
-      font-size: 20px;
+      font-size: 18px;
+      font-weight: 300;
+      color: $second_text_color;
+    }
+
+    &:hover::placeholder {
+      text-indent: 50%;
+      transition: text-indent 0.75s ease-in;
     }
   }
 }

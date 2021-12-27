@@ -2,7 +2,7 @@ import { Fragment } from 'react';
 import { withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-import defaultImage from '../../images/avatar_default_2.png';
+import defaultImage from '../../images/avatar_default.png';
 
 import styles from './UserGitHub.module.scss';
 
@@ -19,6 +19,7 @@ const UserGitHub = data => {
   } = data.user;
 
   const avatarUrl = avatar_url ? avatar_url : defaultImage;
+  const emailUser = email ? email : UserGitHub.defaultProps.emailUser;
 
   const createdAt = `${created_at}`.slice(0, 10);
 
@@ -37,7 +38,7 @@ const UserGitHub = data => {
 
           <ul className={styles.userCard__list}>
             <li className={styles.userCard__item}>
-              <p className={styles.userCard__email}>Email : {email}</p>
+              <p className={styles.userCard__email}>Email : {emailUser}</p>
             </li>
             <li className={styles.userCard__item}>
               <p className={styles.userCard__location}>Location : {location}</p>
@@ -70,7 +71,7 @@ const UserGitHub = data => {
 UserGitHub.defaultProps = {
   avatar_url: defaultImage,
   created_at: 'XXXX-XX-XX',
-  email: 'no mail',
+  emailUser: 'not specified',
   bio: 'This is their biography.',
 };
 
